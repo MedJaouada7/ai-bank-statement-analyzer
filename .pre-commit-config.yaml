@@ -1,0 +1,15 @@
+repos:
+  # 1. Secret detection
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.2
+    hooks:
+      - id: gitleaks
+
+  # 2. Personal information detection
+  - repo: local
+    hooks:
+      - id: pii-scan
+        name: Scan for personal information
+        entry: python scripts/check_pii.py
+        language: system
+        types: [text]
