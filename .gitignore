@@ -76,6 +76,7 @@ replay_pid*
 !.env.example
 
 *.ps1
+!tools/**/*.ps1
 
 # Scala / Metals
 .metals/
