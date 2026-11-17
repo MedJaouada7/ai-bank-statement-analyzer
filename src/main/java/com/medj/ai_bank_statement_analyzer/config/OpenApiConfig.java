@@ -10,9 +10,12 @@ class OpenApiConfig {
 
     @Bean
     OpenAPI openApi() {
-        return new OpenAPI().info(new Info()
-                .title("AI Bank Statement Analyzer API")
-                .description("Statement ingestion, AI categorization and spending insights")
-                .version("v0.1.0"));
+        return new OpenAPI()
+                .info(
+                        new Info()
+                                .title("AI Bank Statement Analyzer API")
+                                .description(
+                                        "Statement ingestion, AI categorization and spending insights")
+                                .version("v0.1.0"));
     }
 }

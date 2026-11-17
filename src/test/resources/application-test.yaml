@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://unused:5432/unused
+    username: unused
+    password: unused
