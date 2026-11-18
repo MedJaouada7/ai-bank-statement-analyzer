@@ -72,6 +72,10 @@ was between 0.62 s and 1.66 s across the four runs.
 Both remaining errors fall in territory that deterministic rules should own, so in the
 real pipeline neither would reach the LLM.
 
+- **Label casing:** rerunning the 3B model with uppercase labels and examples scored
+  13/19 instead of 17/19 (see `docs/spike2.md`). The accuracy numbers here depend on how
+  the labels are written.
+
 ## Findings
 
 - Constraining the output (schema enum, temperature 0, chat-turn examples) turned

@@ -21,6 +21,13 @@ spring:
       jdbc:
         schema-initialization:
           enabled: true
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL}
+      init:
+        pull-model-strategy: never
+      chat:
+        model: ${OLLAMA_CHAT_MODEL}
 
 management:
   endpoints:
