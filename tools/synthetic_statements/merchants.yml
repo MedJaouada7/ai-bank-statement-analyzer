@@ -1,0 +1,23 @@
+merchants:
+  - {name: CARREFOUR MARKET, category: GROCERIES, channel: CARD, role: seed, amount: [8, 95], templates: ["CARTE X4521 {dd}/{mm} CARREFOUR MARKET LYON", "PAIEMENT CB {ddmm} CARREFOUR MARKET {store}"]}
+  - {name: LIDL, category: GROCERIES, channel: CARD, role: holdout, amount: [6, 70], templates: ["PAIEMENT CB LIDL {store} MARSEILLE", "CARTE X4521 {dd}/{mm} LIDL {store}"]}
+  - {name: STARBUCKS, category: DINING, channel: CARD, role: seed, amount: [3, 12], templates: ["PAIEMENT CB {ddmm} STARBUCKS PARIS 75002"]}
+  - {name: MCDONALDS, category: DINING, channel: CARD, role: seed, amount: [5, 25], templates: ["CARTE X4521 {dd}/{mm} MCDONALDS {store} NANTES"]}
+  - {name: LE COMPTOIR DU RELAIS, category: DINING, channel: CARD, role: holdout, amount: [25, 90], templates: ["CARTE X4521 {dd}/{mm} LE COMPTOIR DU RELAIS PARIS"]}
+  - {name: SNCF, category: TRANSPORT, channel: CARD, role: seed, amount: [15, 120], templates: ["PAIEMENT CB SNCF INTERNET {ddmm}"]}
+  - {name: UBER, category: TRANSPORT, channel: CARD, role: holdout, amount: [6, 35], templates: ["UBER *TRIP {ref} HELP.UBER.COM"]}
+  - {name: TOTALENERGIES STATION, category: FUEL, channel: CARD, role: holdout, amount: [30, 85], templates: ["CARTE X4521 {dd}/{mm} TOTALENERGIES STATION NICE"]}
+  - {name: AMAZON, category: SHOPPING, channel: CARD, role: seed, amount: [10, 150], templates: ["AMZN MKTP FR*{ref} AMAZON.FR"]}
+  - {name: ZARA, category: SHOPPING, channel: CARD, role: holdout, amount: [20, 110], templates: ["CARTE X4521 {dd}/{mm} ZARA FRANCE PARIS"]}
+  - {name: ORANGE, category: TELECOM, channel: SEPA_DEBIT, role: seed, recurring_day: 8, amount: [29.99, 29.99], templates: ["PRLV SEPA ORANGE SA REF {ref}"]}
+  - {name: ENGIE, category: UTILITIES, channel: SEPA_DEBIT, role: holdout, recurring_day: 12, amount: [55, 80], templates: ["PRLV SEPA ENGIE ENERGIE REF {ref}"]}
+  - {name: NETFLIX, category: SUBSCRIPTIONS, channel: CARD, role: seed, recurring_day: 15, amount: [13.49, 13.49], templates: ["PAIEMENT CB NETFLIX.COM {ddmm}"]}
+  - {name: SPOTIFY, category: SUBSCRIPTIONS, channel: CARD, role: holdout, recurring_day: 17, amount: [10.99, 10.99], templates: ["PAIEMENT CB SPOTIFY AB STOCKHOLM {ddmm}"]}
+  - {name: PHARMACIE DU CENTRE, category: HEALTH, channel: CARD, role: holdout, amount: [4, 45], templates: ["CARTE X4521 {dd}/{mm} PHARMACIE DU CENTRE LILLE"]}
+  - {name: UGC CINEMA, category: ENTERTAINMENT, channel: CARD, role: holdout, amount: [9, 28], templates: ["PAIEMENT CB UGC CINE CITE {ddmm}"]}
+  - {name: LOYER, category: HOUSING, channel: SEPA_TRANSFER, role: seed, recurring_day: 5, amount: [650, 650], templates: ["VIR SEPA M DUPONT LOYER {monthname}"]}
+  - {name: SALAIRE, category: INCOME, channel: SEPA_TRANSFER, role: seed, recurring_day: 28, credit: true, amount: [2100, 2100], templates: ["VIR SEPA SALAIRE ACME SAS {monthname}"]}
+  - {name: RETRAIT DAB, category: CASH_WITHDRAWAL, channel: ATM, role: seed, amount: [20, 100], templates: ["RETRAIT DAB {ddmm} BNP PARIS"]}
+  - {name: COTISATION CARTE, category: FEES, channel: FEE, role: seed, recurring_day: 3, amount: [2.5, 2.5], templates: ["COTISATION CARTE VISA CLASSIC"]}
+  - {name: VIREMENT A MARTIN, category: TRANSFERS, channel: SEPA_TRANSFER, role: holdout, amount: [20, 150], templates: ["VIR SEPA A. MARTIN REMBOURSEMENT", "VIR INST A. MARTIN {ref}"]}
+  - {name: DECATHLON, category: SHOPPING, channel: CARD, role: holdout, amount: [12, 140], templates: ["CB DECATHLON LILLE {ddmm}"]}

@@ -83,3 +83,7 @@ replay_pid*
 .bloop/
 .bsp/
 .scala-build/
+
+.venv/
+tools/synthetic_statements/out/
+!src/test/**/*.pdf

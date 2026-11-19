@@ -1,0 +1,21 @@
+version: 1
+categories:
+  - {id: GROCERIES,       direction: debit,  definition: "Supermarkets, grocery stores, food markets.", examples: [CARREFOUR, AUCHAN]}
+  - {id: DINING,          direction: debit,  definition: "Restaurants, fast food, cafes, coffee shops, bars.", examples: [MCDONALDS, STARBUCKS]}
+  - {id: TRANSPORT,       direction: debit,  definition: "Trains, buses, metro, taxis, ride-hailing, parking, tolls. Not fuel.", examples: [SNCF, UBER]}
+  - {id: FUEL,            direction: debit,  definition: "Petrol and charging stations (card payments at a station).", examples: [SHELL, BP]}
+  - {id: SHOPPING,        direction: debit,  definition: "Retail stores, clothing, electronics, home goods, online marketplaces.", examples: [AMAZON, DECATHLON]}
+  - {id: UTILITIES,       direction: debit,  definition: "Electricity, gas, water supply.", examples: [EDF, VEOLIA]}
+  - {id: TELECOM,         direction: debit,  definition: "Mobile, internet and TV providers.", examples: [ORANGE, SFR]}
+  - {id: HOUSING,         direction: debit,  definition: "Rent, mortgage payments, property charges, home maintenance.", examples: ["LOYER"]}
+  - {id: SUBSCRIPTIONS,   direction: debit,  definition: "Streaming, software, memberships and recurring digital services.", examples: [NETFLIX, DEEZER]}
+  - {id: ENTERTAINMENT,   direction: debit,  definition: "Cinema, concerts, events, games, leisure and sports activities.", examples: [FNAC SPECTACLES]}
+  - {id: HEALTH,          direction: debit,  definition: "Pharmacies, doctors, dentists, opticians, health insurance top-ups.", examples: [PHARMACIE]}
+  - {id: TRAVEL,          direction: debit,  definition: "Flights, hotels, car rental, holiday bookings.", examples: [AIR FRANCE, BOOKING]}
+  - {id: EDUCATION,       direction: debit,  definition: "Tuition, courses, school fees, books for study.", examples: [UDEMY]}
+  - {id: INSURANCE,       direction: debit,  definition: "Car, home and personal insurance premiums (not health).", examples: [MAIF]}
+  - {id: INCOME,          direction: credit, definition: "Salary, pensions, benefits, and other regular incoming payments.", examples: [SALAIRE]}
+  - {id: TRANSFERS,       direction: both,   definition: "Transfers to or from individuals or between own accounts.", examples: [VIR SEPA]}
+  - {id: CASH_WITHDRAWAL, direction: debit,  definition: "ATM and cash withdrawals.", examples: [RETRAIT DAB]}
+  - {id: FEES,            direction: debit,  definition: "Bank charges, card fees, interest and overdraft costs.", examples: [COTISATION CARTE]}
+  - {id: OTHER,           direction: both,   definition: "Anything that fits no category, or is unclear.", examples: []}

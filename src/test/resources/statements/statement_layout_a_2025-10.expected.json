@@ -1,0 +1,470 @@
+{
+  "layout": "A",
+  "statement": {
+    "bank": "Banque Exemple",
+    "iban": "FR76 0000 0000 0000 0000 0000 000",
+    "period_start": "2025-10-01",
+    "period_end": "2025-10-31",
+    "opening_balance": "1234.56",
+    "closing_balance": "1309.14",
+    "total_debits": "2025.42",
+    "total_credits": "2100.00"
+  },
+  "transactions": [
+    {
+      "date": "2025-10-01",
+      "raw_description": "CARTE X4521 01/10 TOTALENERGIES STATION NICE",
+      "amount": "-57.92",
+      "currency": "EUR",
+      "merchant_group": "TOTALENERGIES STATION",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "FUEL",
+        "merchant": "TOTALENERGIES STATION",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "raw_description": "CARTE X4521 02/10 PHARMACIE DU CENTRE LILLE",
+      "amount": "-39.25",
+      "currency": "EUR",
+      "merchant_group": "PHARMACIE DU CENTRE",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "HEALTH",
+        "merchant": "PHARMACIE DU CENTRE",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "raw_description": "COTISATION CARTE VISA CLASSIC",
+      "amount": "-2.50",
+      "currency": "EUR",
+      "merchant_group": "COTISATION CARTE",
+      "intended_role": "seed",
+      "expected": {
+        "category": "FEES",
+        "merchant": "COTISATION CARTE",
+        "channel": "FEE"
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "raw_description": "PAIEMENT CB UGC CINE CITE 0310",
+      "amount": "-27.72",
+      "currency": "EUR",
+      "merchant_group": "UGC CINEMA",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "ENTERTAINMENT",
+        "merchant": "UGC CINEMA",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "raw_description": "VIR SEPA M DUPONT LOYER OCTOBRE",
+      "amount": "-650.00",
+      "currency": "EUR",
+      "merchant_group": "LOYER",
+      "intended_role": "seed",
+      "expected": {
+        "category": "HOUSING",
+        "merchant": "LOYER",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "raw_description": "CARTE X4521 05/10 MCDONALDS 871 NANTES",
+      "amount": "-22.22",
+      "currency": "EUR",
+      "merchant_group": "MCDONALDS",
+      "intended_role": "seed",
+      "expected": {
+        "category": "DINING",
+        "merchant": "MCDONALDS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-06",
+      "raw_description": "RETRAIT DAB 0610 BNP PARIS",
+      "amount": "-21.56",
+      "currency": "EUR",
+      "merchant_group": "RETRAIT DAB",
+      "intended_role": "seed",
+      "expected": {
+        "category": "CASH_WITHDRAWAL",
+        "merchant": "RETRAIT DAB",
+        "channel": "ATM"
+      }
+    },
+    {
+      "date": "2025-10-07",
+      "raw_description": "PAIEMENT CB SNCF INTERNET 0710",
+      "amount": "-30.00",
+      "currency": "EUR",
+      "merchant_group": "SNCF",
+      "intended_role": "seed",
+      "expected": {
+        "category": "TRANSPORT",
+        "merchant": "SNCF",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-07",
+      "raw_description": "PAIEMENT CB UGC CINE CITE 0710",
+      "amount": "-17.32",
+      "currency": "EUR",
+      "merchant_group": "UGC CINEMA",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "ENTERTAINMENT",
+        "merchant": "UGC CINEMA",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-08",
+      "raw_description": "PRLV SEPA ORANGE SA REF 1409",
+      "amount": "-29.99",
+      "currency": "EUR",
+      "merchant_group": "ORANGE",
+      "intended_role": "seed",
+      "expected": {
+        "category": "TELECOM",
+        "merchant": "ORANGE",
+        "channel": "SEPA_DEBIT"
+      }
+    },
+    {
+      "date": "2025-10-08",
+      "raw_description": "VIR SEPA A. MARTIN REMBOURSEMENT",
+      "amount": "-78.94",
+      "currency": "EUR",
+      "merchant_group": "VIREMENT A MARTIN",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSFERS",
+        "merchant": "VIREMENT A MARTIN",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-08",
+      "raw_description": "PAIEMENT CB 0810 STARBUCKS PARIS 75002",
+      "amount": "-6.59",
+      "currency": "EUR",
+      "merchant_group": "STARBUCKS",
+      "intended_role": "seed",
+      "expected": {
+        "category": "DINING",
+        "merchant": "STARBUCKS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-09",
+      "raw_description": "UBER *TRIP 4456 HELP.UBER.COM",
+      "amount": "-31.41",
+      "currency": "EUR",
+      "merchant_group": "UBER",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSPORT",
+        "merchant": "UBER",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-09",
+      "raw_description": "PAIEMENT CB 0910 STARBUCKS PARIS 75002",
+      "amount": "-9.80",
+      "currency": "EUR",
+      "merchant_group": "STARBUCKS",
+      "intended_role": "seed",
+      "expected": {
+        "category": "DINING",
+        "merchant": "STARBUCKS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-11",
+      "raw_description": "RETRAIT DAB 1110 BNP PARIS",
+      "amount": "-27.74",
+      "currency": "EUR",
+      "merchant_group": "RETRAIT DAB",
+      "intended_role": "seed",
+      "expected": {
+        "category": "CASH_WITHDRAWAL",
+        "merchant": "RETRAIT DAB",
+        "channel": "ATM"
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "raw_description": "PRLV SEPA ENGIE ENERGIE REF 2679",
+      "amount": "-57.17",
+      "currency": "EUR",
+      "merchant_group": "ENGIE",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "UTILITIES",
+        "merchant": "ENGIE",
+        "channel": "SEPA_DEBIT"
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "raw_description": "VIR INST A. MARTIN 1711",
+      "amount": "-89.71",
+      "currency": "EUR",
+      "merchant_group": "VIREMENT A MARTIN",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSFERS",
+        "merchant": "VIREMENT A MARTIN",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "raw_description": "VIR SEPA A. MARTIN REMBOURSEMENT",
+      "amount": "-47.24",
+      "currency": "EUR",
+      "merchant_group": "VIREMENT A MARTIN",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSFERS",
+        "merchant": "VIREMENT A MARTIN",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "raw_description": "CB DECATHLON LILLE 1210",
+      "amount": "-42.83",
+      "currency": "EUR",
+      "merchant_group": "DECATHLON",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "SHOPPING",
+        "merchant": "DECATHLON",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-13",
+      "raw_description": "CB DECATHLON LILLE 1310",
+      "amount": "-85.90",
+      "currency": "EUR",
+      "merchant_group": "DECATHLON",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "SHOPPING",
+        "merchant": "DECATHLON",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-15",
+      "raw_description": "PAIEMENT CB NETFLIX.COM 1510",
+      "amount": "-13.49",
+      "currency": "EUR",
+      "merchant_group": "NETFLIX",
+      "intended_role": "seed",
+      "expected": {
+        "category": "SUBSCRIPTIONS",
+        "merchant": "NETFLIX",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-15",
+      "raw_description": "PAIEMENT CB 1510 STARBUCKS PARIS 75002",
+      "amount": "-4.98",
+      "currency": "EUR",
+      "merchant_group": "STARBUCKS",
+      "intended_role": "seed",
+      "expected": {
+        "category": "DINING",
+        "merchant": "STARBUCKS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-15",
+      "raw_description": "AMZN MKTP FR*5061 AMAZON.FR",
+      "amount": "-18.96",
+      "currency": "EUR",
+      "merchant_group": "AMAZON",
+      "intended_role": "seed",
+      "expected": {
+        "category": "SHOPPING",
+        "merchant": "AMAZON",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-17",
+      "raw_description": "PAIEMENT CB SPOTIFY AB STOCKHOLM 1710",
+      "amount": "-10.99",
+      "currency": "EUR",
+      "merchant_group": "SPOTIFY",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "SUBSCRIPTIONS",
+        "merchant": "SPOTIFY",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "raw_description": "RETRAIT DAB 1810 BNP PARIS",
+      "amount": "-95.75",
+      "currency": "EUR",
+      "merchant_group": "RETRAIT DAB",
+      "intended_role": "seed",
+      "expected": {
+        "category": "CASH_WITHDRAWAL",
+        "merchant": "RETRAIT DAB",
+        "channel": "ATM"
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "raw_description": "CARTE X4521 19/10 CARREFOUR MARKET LYON",
+      "amount": "-14.18",
+      "currency": "EUR",
+      "merchant_group": "CARREFOUR MARKET",
+      "intended_role": "seed",
+      "expected": {
+        "category": "GROCERIES",
+        "merchant": "CARREFOUR MARKET",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-20",
+      "raw_description": "UBER *TRIP 9669 HELP.UBER.COM",
+      "amount": "-34.16",
+      "currency": "EUR",
+      "merchant_group": "UBER",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSPORT",
+        "merchant": "UBER",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "raw_description": "PAIEMENT CB 2110 STARBUCKS PARIS 75002",
+      "amount": "-3.57",
+      "currency": "EUR",
+      "merchant_group": "STARBUCKS",
+      "intended_role": "seed",
+      "expected": {
+        "category": "DINING",
+        "merchant": "STARBUCKS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "raw_description": "RETRAIT DAB 2110 BNP PARIS",
+      "amount": "-54.78",
+      "currency": "EUR",
+      "merchant_group": "RETRAIT DAB",
+      "intended_role": "seed",
+      "expected": {
+        "category": "CASH_WITHDRAWAL",
+        "merchant": "RETRAIT DAB",
+        "channel": "ATM"
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "raw_description": "CARTE X4521 23/10 LE COMPTOIR DU RELAIS PARIS",
+      "amount": "-72.39",
+      "currency": "EUR",
+      "merchant_group": "LE COMPTOIR DU RELAIS",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "DINING",
+        "merchant": "LE COMPTOIR DU RELAIS",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-27",
+      "raw_description": "PAIEMENT CB SNCF INTERNET 2710",
+      "amount": "-99.53",
+      "currency": "EUR",
+      "merchant_group": "SNCF",
+      "intended_role": "seed",
+      "expected": {
+        "category": "TRANSPORT",
+        "merchant": "SNCF",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-28",
+      "raw_description": "VIR SEPA SALAIRE ACME SAS OCTOBRE",
+      "amount": "2100.00",
+      "currency": "EUR",
+      "merchant_group": "SALAIRE",
+      "intended_role": "seed",
+      "expected": {
+        "category": "INCOME",
+        "merchant": "SALAIRE",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-28",
+      "raw_description": "CARTE X4521 28/10 LIDL 3358",
+      "amount": "-15.78",
+      "currency": "EUR",
+      "merchant_group": "LIDL",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "GROCERIES",
+        "merchant": "LIDL",
+        "channel": "CARD"
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "raw_description": "VIR SEPA A. MARTIN REMBOURSEMENT",
+      "amount": "-117.61",
+      "currency": "EUR",
+      "merchant_group": "VIREMENT A MARTIN",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "TRANSFERS",
+        "merchant": "VIREMENT A MARTIN",
+        "channel": "SEPA_TRANSFER"
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "raw_description": "CARTE X4521 31/10 ZARA FRANCE PARIS",
+      "amount": "-93.44",
+      "currency": "EUR",
+      "merchant_group": "ZARA",
+      "intended_role": "holdout",
+      "expected": {
+        "category": "SHOPPING",
+        "merchant": "ZARA",
+        "channel": "CARD"
+      }
+    }
+  ]
+}
