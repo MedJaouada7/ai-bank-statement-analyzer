@@ -123,7 +123,7 @@ These observations come from small, single-machine experiments on 19 cases that 
 - Results were obtained on one CPU-only machine with one model.
 - The observed label-casing effect was tested only with the 3B model.
 - The original seven-label taxonomy was insufficient for some transaction types. Real-system accuracy must be evaluated using the updated taxonomy.
-- Results on these 19 cases are not representative of production accuracy. The actual evaluation will use `eval/datasets/bsa-eval-v1`.
+- Results on these 19 cases are not representative of production accuracy. The actual evaluation will use `eval/datasets/v1`.
 
 ## Decisions
 
@@ -141,7 +141,7 @@ These observations come from small, single-machine experiments on 19 cases that 
 
 7. **Will evaluate label representation separately.** Treat the choice between enum constants (e.g. `CASH_WITHDRAWAL`) and readable labels (e.g. `Cash withdrawal`) as an experiment in the evaluation harness, measured on the validation split.
 
-8. **Will not tune further on the 19 spike cases.** All future accuracy claims must come from `eval/datasets/bsa-eval-v1`.
+8. **Will not tune further on the 19 spike cases.** All future accuracy claims must come from `eval/datasets/v1`.
 
 
 ## Reproduce

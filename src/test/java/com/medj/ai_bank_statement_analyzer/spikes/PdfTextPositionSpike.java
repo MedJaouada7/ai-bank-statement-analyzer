@@ -51,7 +51,8 @@ public class PdfTextPositionSpike extends PDFTextStripper {
 
     // Print the captured words in a structured format
     void printRows() {
-        words.sort(Comparator.comparingInt(Word::page).thenComparing(Word::y).thenComparing(Word::x));
+        words.sort(
+                Comparator.comparingInt(Word::page).thenComparing(Word::y).thenComparing(Word::x));
         int page = -1;
         float rowY = -100;
         StringBuilder row = new StringBuilder();
@@ -72,9 +73,11 @@ public class PdfTextPositionSpike extends PDFTextStripper {
     }
 
     public static void main(String[] args) throws IOException {
-        File pdf = new File(args.length > 0
-                ? args[0]
-                : "tools/synthetic_statements/out/statement_layout_a_2025-10.pdf");
+        File pdf =
+                new File(
+                        args.length > 0
+                                ? args[0]
+                                : "tools/synthetic_statements/out/statement_layout_a_2025-10.pdf");
         long start = System.nanoTime();
         try (PDDocument document = Loader.loadPDF(pdf)) {
             PdfTextPositionSpike stripper = new PdfTextPositionSpike();
